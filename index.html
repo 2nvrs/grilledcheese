@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>grilled cheese</title>
+  <link rel="icon" type="image/png" href="grilled+cheese.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-light: #fefefe;
-      --bg-dark: #0d0d0d;
+      --bg-dark: #000000;
       --text-light: #111;
       --text-dark: #eee;
       --hover-glow: 0 0 20px 5px rgba(255, 170, 0, 0.7);
@@ -71,8 +72,8 @@
 <body>
   <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
   <div class="container">
-    <img src="grilled+cheese.png" class="cheese-img" onclick="goToDiscord()" alt="Normal Grilled Cheese" />
-    <img src="bgcsmp.png" class="cheese-img" onclick="goToDiscord()" alt="Burnt Grilled Cheese" />
+    <img src="grilled+cheese.png" class="cheese-img" onclick="goToDiscord('https://discord.gg/FT7kWHT5Ct')" alt="grilled cheese" />
+    <img src="bgcsmp.png" class="cheese-img" onclick="goToDiscord('https://discord.gg/pNwXTpqBKC')" alt="burnt" />
   </div>
 
   <script>
@@ -90,8 +91,8 @@
       }
     }
 
-    function goToDiscord() {
-      window.location.href = "https://discord.gg/your-invite-link";
+    function goToDiscord(link) {
+      window.location.href = link;
     }
   </script>
 </body>
