@@ -27,6 +27,7 @@
       justify-content: center;
       height: 100vh;
       transition: background-color var(--transition-speed), color var(--transition-speed);
+      user-select: none;
     }
 
     .container {
@@ -37,10 +38,12 @@
     }
 
     .cheese-img {
-      width: 64px; /* Small size to match the first image */
+      width: 64px;
       transition: transform var(--transition-speed), filter var(--transition-speed);
       cursor: pointer;
       border-radius: 10px;
+      user-select: none;
+      -webkit-user-drag: none;
     }
 
     .cheese-img:hover {
